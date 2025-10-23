@@ -1,0 +1,96 @@
+.landing-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: white;
+}
+
+.landing-page h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.config-section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.config-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.player-count {
+  margin-bottom: 30px;
+}
+
+.player-count label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.player-count select {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+
+.player-selection {
+  margin-bottom: 30px;
+}
+
+.player-selection h3 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.player-input {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.player-symbol {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.player-input input {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-right: 15px;
+}
+
+.color-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.start-button {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start-button:hover {
+  background: #ff5252;
+  transform: scale(1.05);
+}
