@@ -1,1 +1,136 @@
-/* (board design) */
+.board-wrap {
+  position: relative;
+  width: 760px;
+  max-width: 86vw;
+  aspect-ratio: 1/1;
+  margin: auto;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  gap: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.board-row {
+  display: contents;
+}
+
+.board-cell {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+
+/* Base areas - colored quadrants */
+.base-green {
+  background-color: #4ade80;
+  border: 1px solid #22c55e;
+}
+
+.base-yellow {
+  background-color: #facc15;
+  border: 1px solid #eab308;
+}
+
+.base-red {
+  background-color: #f87171;
+  border: 1px solid #ef4444;
+}
+
+.base-blue {
+  background-color: #60a5fa;
+  border: 1px solid #3b82f6;
+}
+
+/* Center cross - home paths */
+.center-area {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+/* Main path cells */
+.main-cell {
+  background-color: #fff;
+  border: 1px solid #333;
+}
+
+/* Home path cells for each color */
+.home-path-green {
+  background-color: #4ade80;
+  border: 1px solid #22c55e;
+}
+
+.home-path-yellow {
+  background-color: #facc15;
+  border: 1px solid #eab308;
+}
+
+.home-path-red {
+  background-color: #f87171;
+  border: 1px solid #ef4444;
+}
+
+.home-path-blue {
+  background-color: #60a5fa;
+  border: 1px solid #3b82f6;
+}
+
+/* Center home area */
+.center-home {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+/* Token styling */
+.token-wrapper {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Blockade styling */
+.blockade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 5;
+}
+/* Safe spaces styling */
+.safe-space {
+  position: relative;
+  background-color: #f0f0f0 !important;
+  border: 2px solid #8b4513 !important;
+}
+
+.safe-space-indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #8b4513;
+  z-index: 1;
+  pointer-events: none;
+}
