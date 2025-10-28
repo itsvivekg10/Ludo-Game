@@ -20,7 +20,6 @@ export default function HomeBox({ parent }) {
             coins[parent][slotKey].position === "home" && <Token tokenKey={slotKey} parent={parent} />}
         </div>
       ))}
-      {/* <button onClick={redCick}>onClick</button> */}
     </div>
   );
 }
