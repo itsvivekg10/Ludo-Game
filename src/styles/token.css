@@ -1,1 +1,7 @@
 /* (token visuals) */
+/* token specific styles (we used inline styles in Token.jsx but keep this for extra) */
+.token {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+}
