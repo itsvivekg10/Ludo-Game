@@ -1,4 +1,4 @@
-/* (dice animations) */.dice-block {
+.dice-block {
   display: flex;
   flex-direction: column;
   align-items: center;
